@@ -1,0 +1,199 @@
+.logo{
+    font-size: 40px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.top-header .nav li a{
+	color: #000;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
+.carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+
+}
+.h5, h5 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+.btn{
+	border-radius: 0;
+}
+article{
+	border:0 !important;
+	margin-bottom: 30px;
+	
+}
+article:hover {
+    box-shadow: 0 0 0 rgba(0,0,0,0)!important;
+}
+.category{
+	color: #ddd;
+	text-transform: uppercase;
+}
+.category:hover{
+	
+}
+.title a{
+	color: black;
+	font-size: 25px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.title a:hover{
+	
+}
+article p{
+	color: #777;
+	font-size: initial;
+}
+.read{
+	color: #ddd;
+	text-transform: uppercase;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	display: inline-block;
+}
+.read:hover{
+	color: #777;
+	text-decoration: none;
+	animation-name: readZump;
+	animation-duration: 0.1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+}
+@keyframes readZump{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.1);
+	}
+}
+.read::after{
+	content: " ";
+	width: 0;
+	height: 2px;
+	position: absolute;
+	background: #333;
+	bottom: 0;
+	left: 0;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+.read:hover::after{
+	width: 100%;
+}
+.thumbnail{
+    position: relative;
+}
+.author{
+    position: absolute;
+    bottom: 15px;
+    left: -15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+}
+.author a{
+	color: #fff;
+}
+.date{
+    position: absolute;
+    bottom: 15px;
+    right: -15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+}
+article:hover .author{
+	left: 15px;
+	opacity: 1;
+}
+article:hover .date{
+	right: 15px;
+	opacity: 1;
+}
+article .thumbnail::after{
+	content: "";
+	background: #3333338c;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+	z-index: 0;
+}
+article:hover .thumbnail::after{
+	opacity: 1;
+
+}
+
+.navbar-toggler{
+	margin-left:auto;
+}
+@media (max-width: 1199px) {
+	.title a{
+		font-size: 15px;
+	}
+	
+}
+@media (max-width: 991px) {
+	.top-header{
+		padding-top: 0 !important;
+		padding-bottom: 0!important;
+	}
+	article p{
+		color: #777;
+		font-size: 13px;
+	}
+	.title a{
+		font-size: 15px !important;
+
+	}
+	.title{
+		line-height: 0.6;
+	}
+	
+}
+@media (max-width: 761px) {
+	
+}
